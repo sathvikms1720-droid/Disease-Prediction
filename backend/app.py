@@ -13,6 +13,12 @@ df = df.drop(columns=["Unnamed: 133"])
 
 symptom_columns = list(df.drop("prognosis", axis=1).columns)
 
+@app.route("/")
+def home():
+    return {
+        "message": "Disease Prediction API Running"
+    }
+    
 @app.route("/predict", methods=["POST"])
 def predict():
 
