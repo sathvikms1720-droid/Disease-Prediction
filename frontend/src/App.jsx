@@ -1,11 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"; // Make sure path points to your Navbar file
+import { useState } from "react";
+
 import Home from "./pages/Home";
 import Predict from "./pages/Predict";
 import Result from "./pages/Result";
 import About from "./pages/About";
+import SplashScreen from "./components/SplashScreen";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  if (loading) {
+    return <SplashScreen onFinish={() => setLoading(false)} />;
+  }
+
   return (
     <BrowserRouter>
       <Routes>
