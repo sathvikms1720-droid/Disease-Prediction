@@ -264,7 +264,7 @@ The application displays:
 
 Aspiring Machine Learning Engineer & Full Stack Developer
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: GitHub: https://github.com/sathvikms1720-droid
 
 ---
 
